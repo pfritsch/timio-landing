@@ -1,0 +1,29 @@
+button,
+input[type="submit"],
+.button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  padding: rem-calc(12 24);
+  line-height: rem-calc(24);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  background-color: #0664A8;
+  color: white;
+  font-size: rem-calc(18);
+  border-radius: 3px;
+  margin-top: rem-calc(6);
+
+  transition: background 300ms ease;
+
+  &:hover,
+  &:focus {
+    background: #10497C;
+  }
+}

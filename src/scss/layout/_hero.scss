@@ -1,0 +1,18 @@
+.hero {
+  min-height: 720px;
+  background: url('../img/timio-excel.jpg') no-repeat right bottom;
+  background-size: cover;
+
+  color: white;
+
+  h3, p {
+    // position: relative;
+    // left: 0.25em;
+    // padding-left: 0;
+    // box-shadow: 0.25em 0 0 blue, -0.25em 0 0 blue;
+    display: inline-block;
+    background: rgba(#077E7B, 0.9);
+    color: #fff;
+    padding: 0.25em;
+  }
+}

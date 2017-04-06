@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-family: 'Varela Round', sans-serif;
+  color: #444;
+}
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  @include container;
+  padding: rem-calc(0 24);
+  @media only screen and (min-width:768px) {
+		padding: rem-calc(0 60);
+	}
+}
+
+.has-space {
+	margin-top: rem-calc(60);
+	@media only screen and (min-width:768px) {
+		margin-top: rem-calc(120);
+	}
+}

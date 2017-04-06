@@ -1,0 +1,54 @@
+.newsletter {
+  background: white;
+  border: 1px solid #f1f1f1;
+  text-align: center;
+  padding: rem-calc(60);
+  margin-top: rem-calc(60);
+  margin-bottom: rem-calc(60);
+  border-radius: 3px;
+
+  .form-group{
+    width: 100%;
+  }
+
+  @media only screen and (min-width:768px) {
+    @include span(8 of 12);
+    @include squish(2, 2);
+  }
+  @media only screen and (min-width:1024px) {
+    @include span(6 of 12);
+    @include squish(3, 3);
+  }
+}
+.newsletter-mailchimp {
+  width: 100%;
+  margin-top: rem-calc(24);
+  form{width: 100%;}
+    input[type="email"] {
+      width: 100%;
+      background: #f5f5f5;
+      height: rem-calc(48);
+      padding: rem-calc(12 6);
+      font-size: rem-calc(18);
+      margin-top: rem-calc(6);
+      text-align: center;
+      border: none;
+      outline: none;
+      color: #444;
+      float: left;
+      -webkit-appearance: none;
+      border-radius: 3px;
+      box-shadow: inset 0 -1px rgba(0,0,0,0.1);
+    }
+    input[type="submit"] {
+      margin-top: rem-calc(6);
+    }
+    .form_nospam{
+      font-size: 12px;
+      font-size: 1.2rem;
+    }
+  }
+.newsletter-spam {
+  margin-top: rem-calc(6);
+  color: #999;
+}

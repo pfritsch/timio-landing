@@ -1,0 +1,18 @@
+.feature-list {
+  list-style: none;
+  padding: 0;
+
+  @media only screen and (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.feature-item {
+  margin-top: rem-calc(48);
+  @media only screen and (min-width:768px) {
+    @include span(6 of 12);
+    &:nth-child(even) {
+      @include last;
+    }
+  }
+}
